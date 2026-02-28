@@ -20,7 +20,7 @@ llm = LLM(
 )
 
 brain = ""
-for fp in sorted(glob.glob(r"C:\Users\Gabriel\Downloads\ForeFathers-DApp\forefathers_brain\knowledge\brain_*.json")):
+for fp in sorted(glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "forefathers_brain", "knowledge", "brain_*.json"))):
     d = json.load(open(fp, encoding="utf-8"))
     if isinstance(d, list):
         for i in d:
