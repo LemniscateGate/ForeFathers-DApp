@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+crewai
+litellm
+requests
+groq
+pydantic
